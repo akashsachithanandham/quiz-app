@@ -1,0 +1,11 @@
+.home-page-wrapper {
+  padding: 40px;
+  height:100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(175, 156, 243, 0) 7.92%,
+    #af9cf3 86.48%
+  );
+  background-blend-mode: multiply;
+  overflow-x: hidden;
+}
