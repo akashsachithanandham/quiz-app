@@ -114,6 +114,7 @@ function QuestionsPage() {
           <Question
             question_info={userResponse[currentQuestionId]}
             onOptionClickHandler={onOptionClickHandler}
+            totalQuestionsCount = {userResponse.length}
           />
           <div className="c-button-wrapper">
             <Button
