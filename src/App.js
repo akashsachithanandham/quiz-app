@@ -9,7 +9,6 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/question" element={<QuestionsPage />}></Route>
-        <Route path="/score" element={<HomePage />}></Route>
       </Routes>
     </div>
   );

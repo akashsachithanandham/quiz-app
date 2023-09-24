@@ -114,16 +114,10 @@ export default function getQuestion() {
           question: {
             text: "What is the Capital of Andhra Pradesh?"
           },
-          images: [
-            {
-              image_id: 1,
-              url: "https://t4.ftcdn.net/jpg/01/14/62/33/360_F_114623372_ZUIjiBqg3GGiTkkvFzAk4GJ0zpqliJE7.jpg"
-            }
-          ],
           options: [
             {
               text: "Amaravathi",
-              key: "option_amravathi"
+              key: "option_amaravathi"
             },
             {
               text: "Chennai",

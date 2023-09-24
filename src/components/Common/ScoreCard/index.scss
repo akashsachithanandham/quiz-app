@@ -1,0 +1,51 @@
+.c-score-card-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.correct {
+  background: #44b77b;
+  opacity: 0.2;
+  .radio {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    margin-left: 12px;
+  }
+  .purpose-text {
+    color: #000;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    opacity: 1;
+    margin-left: 12px
+  }
+}
+.incorrect {
+  background: #ff3b3f;
+  opacity: 0.2;
+  .radio {
+    
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    margin-left: 12px;
+  }
+  .purpose-text {
+    color: #000;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    opacity: 1;
+    margin-left: 12px
+  }
+}

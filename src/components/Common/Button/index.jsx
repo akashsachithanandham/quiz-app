@@ -1,9 +1,15 @@
 import React from 'react'
 import './index.scss'
 
-function Button({buttonText, showArrow}) {
+function Button({buttonText, showArrow, onClickHandler}) {
+
+  const onButtonClickHandler =(event) =>{
+    onClickHandler();
+    event.preventDefault()
+  }
+
   return (
-    <div className='c-button'>
+    <div className='c-button' onClick={onButtonClickHandler}>
       {buttonText} {showArrow? <img className='arrow' src='./images/arrow.svg
       '></img>: null}</div>
   )
