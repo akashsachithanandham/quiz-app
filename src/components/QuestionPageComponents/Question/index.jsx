@@ -17,10 +17,10 @@ function Question({
   return (
     <div className="c-question-wrapper">
       <div className="c-question-number-wrapper">
-        <div className="c-question-number">
+        { question.text ?<div className="c-question-number">
            <div className="c-current">{question_id + 1} </div>
           <div className="c-total">/{totalQuestionsCount}</div>
-        </div>
+        </div> : null}
       </div> 
       <div className="c-question">{question.text}</div>
 

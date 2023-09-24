@@ -4,8 +4,11 @@ import './index.scss'
 function Button({buttonText, showArrow, onClickHandler}) {
 
   const onButtonClickHandler =(event) =>{
-    onClickHandler();
+    if(onClickHandler){
+      onClickHandler();
     event.preventDefault()
+    }
+    
   }
 
   return (

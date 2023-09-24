@@ -7,14 +7,15 @@
   flex-direction: row;
 }
 .correct {
-  background: #44b77b;
-  opacity: 0.2;
+  background: #90EE90;
+  
   .radio {
     border-radius: 50%;
     width: 15px;
     height: 15px;
     opacity: 1;
     margin-left: 12px;
+    background-color: #44B77B;;
   }
   .purpose-text {
     color: #000;
@@ -23,13 +24,12 @@
     font-style: normal;
     font-weight: 600;
     line-height: 17px;
-    opacity: 1;
+    opacity: 0.5;
     margin-left: 12px
   }
 }
 .incorrect {
-  background: #ff3b3f;
-  opacity: 0.2;
+  background: #ffa9a9;
   .radio {
     
     border-radius: 50%;
@@ -37,6 +37,7 @@
     height: 15px;
     opacity: 1;
     margin-left: 12px;
+    background: #ff3b3f;
   }
   .purpose-text {
     color: #000;
@@ -45,7 +46,16 @@
     font-style: normal;
     font-weight: 600;
     line-height: 17px;
-    opacity: 1;
+    opacity: 0.3;
     margin-left: 12px
   }
+}
+.response-count {
+  margin-left: 12px;
+  color: #000;
+font-family: Source Sans Pro;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 15px; /* 93.75% */
 }
