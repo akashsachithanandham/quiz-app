@@ -6,6 +6,8 @@
   padding: 20px;
   display: flex;
   flex-direction: row;
+
+ 
   .radio {
     stroke-width: 2px;
     stroke: #000;
@@ -14,6 +16,12 @@
     opacity: 0.083;
     width: 15px;
     height: 15px;
+  }
+
+  .checked {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
   }
   .text {
     color: #000;
@@ -24,4 +32,8 @@
     font-weight: 400;
     line-height: 20px; /* 160.714% */
   }
+}
+.selected {
+  border: 2px solid #44b77b;
+  background: #fff;
 }

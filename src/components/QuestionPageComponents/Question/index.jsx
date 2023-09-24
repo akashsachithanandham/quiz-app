@@ -1,10 +1,9 @@
 import React from "react";
 import "./index.scss";
 import Option from "../Option";
-import Button from "../../Common/Button";
 
-function Question({ question_info }) {
-  let { question = {}, options = [], images = [] } = question_info || {};
+function Question({ question_info, onOptionClickHandler }) {
+  let { question = {}, options = [], images = [], question_id } = question_info || {};
 
   return (
     <div className="c-question-wrapper">
@@ -24,7 +23,7 @@ function Question({ question_info }) {
           })
         : null}
       {options.map((option) => {
-        return <Option option_info={option} />;
+        return <Option option_info={option} onOptionClickHandler={onOptionClickHandler} question_id={question_id}  />;
       })}
       
     </div>

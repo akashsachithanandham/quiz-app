@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useReducer, useState } from "react";
 import { fetchQuestions } from "../../APIs/fetchQuestions";
 import Question from "../../components/QuestionPageComponents/Question";
 import "./index.scss";
@@ -14,9 +14,9 @@ function QuestionsPage() {
     fetchQuestions()
       .then((questions_data) => {
         setQuestions(questions_data);
-        console.log('hi',questions)
 
         //Initially setting all the options as not selected by the user.
+        
 
         let userResponse = questions_data.map((question_data) => {
           let { options } = question_data;
@@ -25,11 +25,25 @@ function QuestionsPage() {
         });
 
         setUserResponse(userResponse);
+        console.log('printng: ', userResponse)
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
+
+  const onOptionClickHandler = (key, question_id) =>{
+    userResponse[question_id].options.map(option =>{
+      if(option.key === key){
+        option.selected = true;
+      } else {
+        option.selected = false;
+      }
+      return option
+    })
+    let updatedUserResponse =[...userResponse]
+    setUserResponse(updatedUserResponse);
+  }
 
   return (
     <div className="c-questions-page-wrapper">
@@ -37,9 +51,9 @@ function QuestionsPage() {
         <img src="./images/top.svg" alt="top-image" className="c-top-image" />
       </div>
      
-      <Question question_info={questions[currentQuestionId]} />
+      <Question question_info={userResponse[currentQuestionId]} onOptionClickHandler={onOptionClickHandler} />
       <div className="c-button-wrapper">
-       <Button buttonText={'Next'}  /> 
+       <Button buttonText={'Next'} showArrow={true} /> 
       </div>
       
     </div>

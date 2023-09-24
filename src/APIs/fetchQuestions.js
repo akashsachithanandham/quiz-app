@@ -1,6 +1,6 @@
 export function fetchQuestions() {
   return new Promise((resolve, reject) =>
-    fetch("https://run.mocky.io/v3/1ecc500f-634a-40f7-ad2a-3ba09652c50a")
+    fetch("https://run.mocky.io/v3/53fde6d3-dd02-4de7-abfe-10b5f5302650")
       .then((response) => response.json())
 
       .then((response_data) => {

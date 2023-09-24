@@ -2,9 +2,9 @@ export default function getQuestion() {
     let questions_api = {
       data: [
         {
-          question_id: 1,
+          question_id: 0,
           question: {
-            text: "What is the Capital of India"
+            text: "What is the Capital of India?"
           },
           images: [
             {
@@ -25,7 +25,7 @@ export default function getQuestion() {
             },
             {
               text: "Bangalore",
-              key: "option_new_delhi"
+              key: "option_bangalore"
             },
             {
               text: "Hyderabad",
@@ -35,9 +35,9 @@ export default function getQuestion() {
           answer: "option_new_delhi"
         },
         {
-          question_id: 2,
+          question_id: 1,
           question: {
-            text: "What is the Capital of Tamil Nadu"
+            text: "What is the Capital of Tamil Nadu?"
           },
           options: [
             {
@@ -50,7 +50,7 @@ export default function getQuestion() {
             },
             {
               text: "Bangalore",
-              key: "option_new_delhi"
+              key: "option_bangalore"
             },
             {
               text: "Hyderabad",
@@ -60,9 +60,9 @@ export default function getQuestion() {
           answer: "option_chennai"
         },
         {
-          question_id: 3,
+          question_id: 2,
           question: {
-            text: "What is the Capital of Telangana"
+            text: "What is the Capital of Telangana?"
           },
           options: [
             {
@@ -75,7 +75,7 @@ export default function getQuestion() {
             },
             {
               text: "Bangalore",
-              key: "option_new_delhi"
+              key: "option_bangalore"
             },
             {
               text: "Hyderabad",
@@ -85,9 +85,9 @@ export default function getQuestion() {
           answer: "option_hyderabad"
         },
         {
-          question_id: 4,
+          question_id: 3,
           question: {
-            text: "What is the Capital of Karnataka"
+            text: "What is the Capital of Karnataka?"
           },
           options: [
             {
@@ -100,7 +100,7 @@ export default function getQuestion() {
             },
             {
               text: "Bangalore",
-              key: "option_new_delhi"
+              key: "option_bangalore"
             },
             {
               text: "Hyderabad",
@@ -110,9 +110,9 @@ export default function getQuestion() {
           answer: "option_bangalore"
         },
         {
-          question_id: 5,
+          question_id: 4,
           question: {
-            text: "What is the Capital of Andhra Pradesh"
+            text: "What is the Capital of Andhra Pradesh?"
           },
           images: [
             {
@@ -131,7 +131,7 @@ export default function getQuestion() {
             },
             {
               text: "Bangalore",
-              key: "option_new_delhi"
+              key: "option_bangalore"
             },
             {
               text: "Hyderabad",
