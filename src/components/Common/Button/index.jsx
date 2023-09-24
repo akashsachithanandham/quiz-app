@@ -3,7 +3,7 @@ import './index.scss'
 
 function Button({buttonText}) {
   return (
-    <div className='c-button-wrapper'>{buttonText}</div>
+    <div className='c-button'>{buttonText}</div>
   )
 }
 

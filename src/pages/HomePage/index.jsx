@@ -1,15 +1,20 @@
+import { Link } from 'react-router-dom'
 import Button from '../../components/Common/Button'
 import Logo from '../../components/Common/Logo'
 import BodyComponent from '../../components/HomePageComponents/BodyComponent'
-import './index.css'
+import './index.scss'
 import React from 'react'
 
 function HomePage() {
   return (
-    <div className='home-page-wrapper'>
+    <div className='c-home-page-wrapper'>
       <Logo />
       <BodyComponent />
-      <Button buttonText={'Start'}/>
+      <div className='c-button-wrapper'>
+        <Link to='/question'> <Button buttonText={'Start'}/></Link>
+      
+      </div>
+      
     </div>
   )
 }
