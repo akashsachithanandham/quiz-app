@@ -32,27 +32,24 @@ function QuestionsPage() {
       });
   }, []);
 
-  const getResponseCount = () =>{
-
+  const getResponseCount = () => {
     let correctResponseCount = 0;
     let inCorrectResponseCount = 0;
 
-    userResponse.forEach( question =>{
-      let {options, answer} = question
-      let selectedOption = options.filter(option =>option.selected);
-      if(selectedOption.length){
-        if(selectedOption[0].key === answer){
-          correctResponseCount +=1;
+    userResponse.forEach((question) => {
+      let { options, answer } = question;
+      let selectedOption = options.filter((option) => option.selected);
+      if (selectedOption.length) {
+        if (selectedOption[0].key === answer) {
+          correctResponseCount += 1;
         } else {
-          inCorrectResponseCount+=1;
+          inCorrectResponseCount += 1;
         }
       }
-      
-    })
+    });
 
-    return {correctResponseCount, inCorrectResponseCount}
-
-  }
+    return { correctResponseCount, inCorrectResponseCount };
+  };
 
   const onOptionClickHandler = (key, question_id) => {
     userResponse[question_id].options.map((option) => {
@@ -94,7 +91,7 @@ function QuestionsPage() {
     setShowScoreCard(false);
   };
 
-  let {correctResponseCount, inCorrectResponseCount} = getResponseCount();
+  let { correctResponseCount, inCorrectResponseCount } = getResponseCount();
 
   return (
     <div className="c-questions-page-wrapper">
@@ -114,7 +111,7 @@ function QuestionsPage() {
           <Question
             question_info={userResponse[currentQuestionId]}
             onOptionClickHandler={onOptionClickHandler}
-            totalQuestionsCount = {userResponse.length}
+            totalQuestionsCount={userResponse.length}
           />
           <div className="c-button-wrapper">
             <Button

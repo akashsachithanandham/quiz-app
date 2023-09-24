@@ -1,19 +1,19 @@
-.c-questions-page-wrapper{
-  background: #AF9CF3;
-background-blend-mode: multiply;
-height: 100vh;
-overflow-x:hidden;
-.c-top-image{
-  height: 100px;
-}
-.c-button-wrapper{
-  bottom: 100px;
-  position: fixed;
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  margin-left: 40px;
-  margin-right: 40px;
-}
+.c-questions-page-wrapper {
+  background: #af9cf3;
+  background-blend-mode: multiply;
+  height: 100vh;
+  overflow-x: hidden;
+  .c-top-image {
+    height: 100px;
+  }
+  .c-button-wrapper {
+    bottom: 100px;
+    position: fixed;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
